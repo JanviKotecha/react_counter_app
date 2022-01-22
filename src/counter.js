@@ -1,56 +1,34 @@
-import React from 'react';
+// import React from 'react';
+// import { connect } from 'react-redux';
 
-class Counter extends React.Component {
-  state = { count: 0 };
 
-  increment = () => {
-    this.setState({
-      count: this.state.count + 1,
-    });
-  };
+// class Counter extends React.Component {
+//   increment = () => {
+//     this.props.dispatch({ type: 'INCREMENT' });
+//   }
 
-  decrement = () => {
-    this.setState({
-      count: this.state.count - 1,
-    });
-  };
+//   decrement = () => {
+//     this.props.dispatch({ type: 'DECREMENT' });
+//   }
 
-  render() {
-    return (    
-        <center>
-          <div
-            style={{
-              backgroundColor: '#cccc',
-              color: 'black',
-              padding: '50px',
-            }}
-          >
-            <h2>Counter</h2>
-            <h2>
-              <button
-                onClick={this.decrement}
-                style={{
-                  backgroundColor: 'lightblue',
-                  color: 'black',
-                  margin: '20px',
-                  width:'50px',
-                  padding:'6px'
-                }} >
-                -
-              </button>
-              {this.state.count}
-              <button onClick={this.increment}  style={{
-                  backgroundColor: 'lightblue',
-                  color: 'black',
-                  margin: '20px',
-                  width:'50px',
-                  padding:'6px'
-                }}>+</button>
-            </h2>
-          </div>
-        </center>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <div>
+//         <h2>Counter</h2>
+//         <div>
+//           <button onClick={this.decrement}>-</button>
+//           <span>{this.props.count}</span>
+//           <button onClick={this.increment}>+</button>
+//         </div>
+//       </div>
+//     )
+//   }
+// }
 
-export default Counter;
+// function mapStateToProps(state) {
+//   return {
+//     count: state.count
+//   };
+// }
+
+// export default connect(mapStateToProps)(Counter);
